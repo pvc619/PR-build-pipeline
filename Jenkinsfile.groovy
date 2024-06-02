@@ -34,7 +34,7 @@ pipeline {
                                       credentialsId: 'test-pipeline-credentials',
                                       refspec: '+refs/pull/*:refs/remotes/origin/pr/*'
                                   ]],
-                                  browser: [$class: 'GithubWeb', url: 'https://github.com/pvc619/PR-build-pipeline/blob/main/src/main/java/com/example/App.java']
+                                  browser: [$class: 'GithubWeb', url: 'https://github.com/pvc619/PR-build-pipeline/blob/PR-Branch/src/main/java/com/example/App.java']
                         ])
                     } catch (Exception e) {
                         error("Checkout Failed: ${e.message}")
